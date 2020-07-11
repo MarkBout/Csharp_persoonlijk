@@ -14,7 +14,6 @@ namespace SQL_input
     public partial class Main_Form : Form
     {
         Variables vars = new Variables();
-        SqlBusiness Database = new SqlBusiness();
         public Main_Form()
         {
             InitializeComponent();
@@ -29,9 +28,11 @@ namespace SQL_input
 
         private void btn_submit_Click(object sender, EventArgs e)
         {
-            try { 
-            //SQL qeurry
-            vars.Sqlcommand = tbx_command.Text;
+            try {
+                vars.DataTable.Clear();
+                vars.DataTable.Columns.Clear();
+                //SQL qeurry
+                vars.Sqlcommand = tbx_command.Text;
             //Data ophalen en in tabel stoppen
                 //Dataadapter om qeury en te sturen en result op te vangen
                 MySqlDataAdapter mySqlData = new MySqlDataAdapter(vars.Sqlcommand, SqlBusiness.DBconnection);
@@ -53,10 +54,7 @@ namespace SQL_input
             Console.WriteLine(vars.DataTable);
         }
 
-        private void btn_export_txt_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -80,6 +78,11 @@ namespace SQL_input
         {
             Form go = new Form3();
             go.Show();
+        }
+
+        private void btn_export_txt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

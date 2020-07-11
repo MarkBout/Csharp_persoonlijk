@@ -17,3 +17,21 @@ C:\Users\Mark Bout\Documents\Github repository\C-Obama_OpenTK\SQL_input\obj\Debu
 C:\Users\Mark Bout\Documents\Github repository\C-Obama_OpenTK\SQL_input\obj\Debug\SQL_input.csproj.CoreCompileInputs.cache
 C:\Users\Mark Bout\Documents\Github repository\C-Obama_OpenTK\SQL_input\obj\Debug\SQL_input.Main_Form.resources
 C:\Users\Mark Bout\Documents\Github repository\C-Obama_OpenTK\SQL_input\obj\Debug\SQL_input.Form3.resources
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\SQL_input.exe.config
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\SQL_input.exe
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\SQL_input.pdb
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\Google.Protobuf.dll
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\BouncyCastle.Crypto.dll
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\Ubiety.Dns.Core.dll
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\Renci.SshNet.dll
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\bin\Debug\MySql.Data.xml
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.csprojAssemblyReference.cache
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.Main_Form.resources
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.Form2.resources
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.Form3.resources
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.Properties.Resources.resources
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.csproj.GenerateResource.cache
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.csproj.CoreCompileInputs.cache
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.csproj.CopyComplete
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.exe
+E:\Documents\GithubRepositorys\Csharp_persoonlijk\SQL_input\obj\Debug\SQL_input.pdb

@@ -40,6 +40,7 @@
             this.dgv_edit.Name = "dgv_edit";
             this.dgv_edit.Size = new System.Drawing.Size(642, 264);
             this.dgv_edit.TabIndex = 0;
+            this.dgv_edit.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_edit_CellContentClick);
             // 
             // Form3
             // 
@@ -48,6 +49,9 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgv_edit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

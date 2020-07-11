@@ -16,7 +16,7 @@ namespace SQL_input
     public class SqlBusiness
     {
         Variables vars = new Variables();
-       public static MySqlConnection DBconnection;
+        public static MySqlConnection DBconnection;
         public static string MysqlConnentionString;
         //Dynamisch verbinding maken met DB
         public object DBconnect(string ipadd, string port, string username, string password, string dbname)
@@ -29,7 +29,7 @@ namespace SQL_input
             }
             catch (Exception e)
             {
-                MessageBox.Show(e + "\n" + "Null error bij MySQLConnectionString.", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(e + "\n" + "Null error bij MySQLConnectionString.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Console.WriteLine(MysqlConnentionString);
@@ -41,10 +41,19 @@ namespace SQL_input
         {
             if (DBconnection.State == ConnectionState.Closed)
             {
-                DBconnection.Open();
-                MessageBox.Show("Connection open");
-                checkConn = true;
-                return true;
+                try
+                {
+                    DBconnection.Open();
+                    MessageBox.Show("Connection open");
+                    checkConn = true;
+                    return true;
+                }
+                catch (Exception f)
+                {
+
+                    MessageBox.Show(f + "\n", "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    return false;
+                }
             }
             else if (DBconnection.State == ConnectionState.Open)
             {

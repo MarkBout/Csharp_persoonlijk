@@ -36,16 +36,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.switchDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_export_excel = new System.Windows.Forms.Button();
             this.btn_export_txt = new System.Windows.Forms.Button();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qeuryresult)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_submit
             // 
-            this.btn_submit.Location = new System.Drawing.Point(1111, 108);
+            this.btn_submit.Location = new System.Drawing.Point(104, 172);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(149, 41);
             this.btn_submit.TabIndex = 14;
@@ -56,7 +56,7 @@
             // tbx_command
             // 
             this.tbx_command.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.tbx_command.Location = new System.Drawing.Point(169, 108);
+            this.tbx_command.Location = new System.Drawing.Point(12, 107);
             this.tbx_command.Multiline = true;
             this.tbx_command.Name = "tbx_command";
             this.tbx_command.Size = new System.Drawing.Size(936, 37);
@@ -66,7 +66,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(492, 25);
+            this.label1.Location = new System.Drawing.Point(310, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(261, 31);
             this.label1.TabIndex = 18;
@@ -76,17 +76,17 @@
             // 
             this.dgv_qeuryresult.AllowUserToAddRows = false;
             this.dgv_qeuryresult.AllowUserToDeleteRows = false;
-            this.dgv_qeuryresult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_qeuryresult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_qeuryresult.Location = new System.Drawing.Point(198, 295);
+            this.dgv_qeuryresult.Location = new System.Drawing.Point(12, 300);
             this.dgv_qeuryresult.Name = "dgv_qeuryresult";
             this.dgv_qeuryresult.ReadOnly = true;
-            this.dgv_qeuryresult.Size = new System.Drawing.Size(931, 267);
+            this.dgv_qeuryresult.ShowEditingIcon = false;
+            this.dgv_qeuryresult.Size = new System.Drawing.Size(936, 267);
             this.dgv_qeuryresult.TabIndex = 19;
             // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(198, 164);
+            this.btn_edit.Location = new System.Drawing.Point(297, 172);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(157, 45);
             this.btn_edit.TabIndex = 20;
@@ -100,7 +100,7 @@
             this.generalToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1269, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(974, 24);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -116,13 +116,20 @@
             // switchDatabaseToolStripMenuItem
             // 
             this.switchDatabaseToolStripMenuItem.Name = "switchDatabaseToolStripMenuItem";
-            this.switchDatabaseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.switchDatabaseToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.switchDatabaseToolStripMenuItem.Text = "Switch Database";
             this.switchDatabaseToolStripMenuItem.Click += new System.EventHandler(this.switchDatabaseToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // btn_export_excel
             // 
-            this.btn_export_excel.Location = new System.Drawing.Point(405, 164);
+            this.btn_export_excel.Location = new System.Drawing.Point(504, 172);
             this.btn_export_excel.Name = "btn_export_excel";
             this.btn_export_excel.Size = new System.Drawing.Size(157, 45);
             this.btn_export_excel.TabIndex = 22;
@@ -131,26 +138,19 @@
             // 
             // btn_export_txt
             // 
-            this.btn_export_txt.Location = new System.Drawing.Point(596, 164);
+            this.btn_export_txt.Location = new System.Drawing.Point(695, 172);
             this.btn_export_txt.Name = "btn_export_txt";
             this.btn_export_txt.Size = new System.Drawing.Size(157, 45);
             this.btn_export_txt.TabIndex = 23;
             this.btn_export_txt.Text = "Export Table to txt";
             this.btn_export_txt.UseVisualStyleBackColor = true;
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1269, 673);
+            this.ClientSize = new System.Drawing.Size(974, 578);
             this.Controls.Add(this.btn_export_txt);
             this.Controls.Add(this.btn_export_excel);
             this.Controls.Add(this.btn_edit);
@@ -159,9 +159,11 @@
             this.Controls.Add(this.tbx_command);
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main_Form";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SQL Interface";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_qeuryresult)).EndInit();
             this.menuStrip1.ResumeLayout(false);
